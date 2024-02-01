@@ -17,12 +17,13 @@ body {
    padding: 33px 0;
    min-height: 100%;
    overflow: hidden;
+   
 }
-
 .container {
     max-width: 1305px;
     margin: 0 auto;
     padding: 0 10px;
+    
 }
 /* HEADER ------------------------------------------------------------------------------🔥*/
 
@@ -31,73 +32,40 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.header_menu-list nav ul li{
-    margin-right: 33px;
+.menu_list {
+    display: flex;
+    gap: 33px;
 }
 .menu_list{
     position: relative;
 }
-.header_menu-list ul li {
+.menu_list li {
     position: relative;
     list-style: none;
-    float: left;
 }
-.header_menu-list ul li a {
+.menu_list a {
     text-decoration: none;
     display: flex;
     transition: .3s ease-in-out;
-   
 }
-.header_menu-list ul li a:hover {
-    color: rgb(110, 110, 110);
+.menu_list a:hover {
+    color: rgb(86, 86, 86);
 }
-.header_menu-list ul li ul {
-    position: absolute;
-    width: 150px;
-    left: 0;
-    background-color: rgb(48, 48, 48);
-}
-.header_menu-list ul li ul li {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.587);
-    padding: 10px;
-    cursor: pointer;
-}
-.header_menu-list ul li ul li:hover {
-    background-color: black;
-}
-.subWfb {
-    word-wrap: 0;
-    height: 0;
-    overflow: hidden;
-    transition: 0.3s ease-in-out;
-    border-radius: 9px;
-}
-.search_section-block {
-    display: none;
-}
-.search_section-block {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-.header_search-cart {
+.header__icons {
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 20px;
 }
 /* корзина --------------------------------------------------------------*/
-.cart {
-    display: flex;
+
+.header__shopping-cart {
     position: relative;
     margin-right: 10px;
 }
 .cartAmount {
     position: absolute;
     top: -16px;
-    right: -14px;
+    right: -5px;
     font-size: 16px;
     background-color: black;
     border-radius: 3px;
