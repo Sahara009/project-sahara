@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: black;
+}
+body { 
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+.header {
+   position: fixed;
+   width: 100%;
+   padding: 33px 0;
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.container {
+    max-width: 1305px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+/* HEADER ------------------------------------------------------------------------------🔥*/
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_menu-list nav ul li{
+    margin-right: 33px;
+}
+.menu_list{
+    position: relative;
+}
+.header_menu-list ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+.header_menu-list ul li a {
+    text-decoration: none;
+    display: flex;
+    transition: .3s ease-in-out;
+   
+}
+.header_menu-list ul li a:hover {
+    color: rgb(110, 110, 110);
+}
+.header_menu-list ul li ul {
+    position: absolute;
+    width: 150px;
+    left: 0;
+    background-color: rgb(48, 48, 48);
+}
+.header_menu-list ul li ul li {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.587);
+    padding: 10px;
+    cursor: pointer;
+}
+.header_menu-list ul li ul li:hover {
+    background-color: black;
+}
+.subWfb {
+    word-wrap: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    border-radius: 9px;
+}
+.search_section-block {
+    display: none;
+}
+.search_section-block {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.header_search-cart {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+/* корзина --------------------------------------------------------------*/
+.cart {
+    display: flex;
+    position: relative;
+    margin-right: 10px;
+}
+.cartAmount {
+    position: absolute;
+    top: -16px;
+    right: -14px;
+    font-size: 16px;
+    background-color: black;
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
+}
