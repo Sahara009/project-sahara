@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css-styles/header.css">
+    <link rel="stylesheet" href="css-styles/slider.css">
     <link rel="stylesheet" href="css-styles/media.css">
     <link rel="stylesheet" href="global.css">
     <title>Main-page</title>
@@ -21,9 +22,9 @@
 
                         <nav class="nav">
                                 <ul class="menu_list">
-                                    <li><a href="./catalog.html">ALL PRODUCTS</a></li>
-                                    <li><a href="./about.html">ABOUT</a></li>
-                                    <li><a href="./support.html">SUPPORT</a></li>
+                                    <li class="menu-list-item"><a class="menu-list-link" href="./catalog.html">ALL PRODUCTS</a></li>
+                                    <li class="menu-list-item"><a class="menu-list-link" href="./about.html">ABOUT</a></li>
+                                    <li class="menu-list-item"><a class="menu-list-link" href="./support.html">SUPPORT</a></li>
                                 </ul>
                         </nav>
 
@@ -42,6 +43,81 @@
                 </div>
             </div>
         </header>
+
+        <div class="container">
+            <section class="slider">
+                <div class="sliders__line">
+                    <div class="slider__content">
+                        <div class="slider__title">
+                            <h1 class="slider__title-heading">The new phones are here take a look.</h1>
+                            <p class="slider__title-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
+                            <button class="slider__button"><a href="">Explore</a></button>
+                        </div>
+                        <div class="slider__img">
+                            <img class="slider__img-image" src="assets/images/slider_image.png" alt="">
+                        </div>
+                        <div class="slider__buttons slider-prev">
+                            <img src="assets/images/arrow_left.png" alt="">
+                        </div>  
+                        <div class="slider__buttons slider-next">
+                            <img src="assets/images/arrow_right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="categories">
+            <div class="container">
+
+                <div class="main__titles main__titles_categories">
+                    <h2 class="main__titles-title">Shop our latest offers and categories</h2>
+                    <p class="main__titles-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="parent">
+                    <div class="category__laptop category-card">
+                        <div class="category__laptop_img">
+                            <img class="category__laptop-image" src="assets/images/laptop_cat.png" alt="">
+                        </div>
+                        <div class="category__laptop_titles">
+                            <p class="category__subtitle">Laptops</p>
+                            <h3 class="category__title">True Laptop<br>Solution</h3>
+                        </div>
+                    </div>
+
+                    <div class="category__watch category-card">
+                        <div class="category__watch_img">
+                            <img class="category__watch-image" src="assets/images/watch-cat.png" alt="">
+                        </div>
+                        <div class="category__watch_titles">
+                            <p class="category__subtitle">Watch</p>
+                            <h3 class="category__title">Not just stylisht</h3>
+                        </div>
+                    </div>
+
+                    <div class="category__phone category-card">
+                        <div class="category__phone_img">
+                            <img class="category__phone-image" src="assets/images/phone-cat.png" alt="">
+                        </div>
+                        <div class="category__phone_titles">
+                            <p class="category__subtitle">Phones</p>
+                            <h3 class="category__title">Your day to day life</h3>
+                        </div>
+                    </div>
+                    <div class="category__tablet category-card">
+                        <div class="category__tablet_titles">
+                            <p class="category__subtitle">Tablet</p>
+                            <h3 class="category__title">Empower your work</h3>
+                        </div>
+                        <div class="category__tablet_img">
+                            <img class="category__phone-image" src="assets/images/tablet-cat.png" alt="">
+                        </div>
+                    </div>
+                    </div>
+
+            </div>
+        </section>
 
 </body>
 </html>
